@@ -174,7 +174,7 @@ nav ul li a:hover::after {
 .circle-for-icon {
     position: absolute;
     top: 36%;
-    left: 8%;
+    left: 100px;
     width: 100px;
     height: 100px;
     background-color: #3C3D43;
@@ -200,7 +200,17 @@ nav ul li a:hover::after {
     display: flex;
 }
 
+.text-container-one p, h2 {
+    margin-left:60px;
+    margin-top: 20px;
+    margin-right: 40px;
+    
+}
 
+.dashed-line {
+    border-left: 2px dashed black;
+    margin-left: 150px;
+}
 
 /* Media query for responsive design */
 @media (max-width: 1250px) {
