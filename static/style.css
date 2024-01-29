@@ -105,7 +105,7 @@ nav ul li a:hover::after {
 }
 
 .circle h1 span {
-    font-size: 36px;font-weight: bolder;
+    font-size: 52px;font-weight: bolder;
 }
 
 .circle h1 .cookery-school {
@@ -130,6 +130,7 @@ nav ul li a:hover::after {
 .location-container span {
     display: block;
     font-weight: bold;
+    font-size: 24px;
 }
 
 .full-screen-container {
@@ -194,13 +195,13 @@ nav ul li a:hover::after {
     margin-bottom: 10px;
 }
 
-.text-container-one {
-    height: 800px;
+.bkg-container-one {
+    height: fit-content;
     background-color: #E5D3B5;
     display: flex;
 }
 
-.text-container-one p, h2 {
+.bkg-container-one h2 {
     margin-left:60px;
     margin-top: 20px;
     margin-right: 40px;
@@ -210,6 +211,27 @@ nav ul li a:hover::after {
 .dashed-line {
     border-left: 2px dashed black;
     margin-left: 150px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.text-section {
+    flex: 5;
+    padding-right: 20px; 
+}
+.image-section {
+    flex: 1;
+}
+.image-section > img {
+   
+    height: auto;
 }
 
 /* Media query for responsive design */
@@ -244,6 +266,12 @@ nav ul li a:hover::after {
 
     .nav-links li a {
         font-size: 24px;
+    }
+}
+
+@media (max-width:854px) {
+    .text-container {
+        flex-direction: column-reverse;
     }
 }
 
@@ -284,6 +312,38 @@ nav ul li a:hover::after {
     .circle h1 .cookery-school {
         font-size: 18px;
         padding-top: 20px; 
-}
+    }
 
+  
+    .text-section, .image-section {
+        flex: none;
+        padding-right: 0;
+    }
+
+    .circle-for-icon {
+        position: absolute;
+        top: 36%;
+        left: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    /* logos for circles */
+    
+    .school-logo {
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        margin-bottom: 4px;
+    }
+
+    .dashed-line {
+        border-left: 2px dashed black;
+        margin-left: 50px;
+    }
+
+    .text-container {
+        margin-left: 20px;
+        margin-right:20px;
+    }
 }
