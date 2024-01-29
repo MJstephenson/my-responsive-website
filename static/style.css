@@ -49,10 +49,10 @@ nav ul li a {
 
 /* Css for line and circle on homepage */
 #center-line {
-    position: fixed;
+    position: absolute;
     left: 49.5%;
     top: 0;
-    height: 100vh;
+    height: 120vh;
     width: 18px;
     background-color: #E5D3B5;
     z-index: 10;
@@ -94,7 +94,7 @@ nav ul li a {
     padding-top: 20px; 
 }
 .location-container {
-    position: fixed;
+    position: absolute;
     left: 50%;
     top: 66.67vh;
     transform: translate(-50%, -50%);
@@ -112,7 +112,21 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* end of code for line and circle on home page */
+.full-screen-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* end of css for line and circle on homepage */
+
+.full-chefs-kitchen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 30;
+}
 
 /* Media query for responsive design */
 @media (max-width: 600px) {
