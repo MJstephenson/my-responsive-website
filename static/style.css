@@ -129,27 +129,31 @@ nav ul li a {
 }
 
 /* Media query for responsive design */
-@media (max-width: 600px) {
+@media (max-width: 1250px) {
     nav ul {
         display: none;
         position: absolute;
-        top: 40px; 
+        top: -16px; 
         left: 0;
         right: 0;
         flex-direction: column;
         background-color: #3c3d43; 
-        padding: 10px 20px;
-        box-sizing: border-box;
+        padding-top: 50px;
+        min-height: 100vh;
+   
+       
+        z-index: 40;
     }
     
     .hamburger {
         display: block;
+        z-index: 50;
     }
 
     .nav-links {
         flex-direction: column;
         width: 100%;
-        align-items: left;
+        align-items: start;
     }
 
     .nav-links li {
