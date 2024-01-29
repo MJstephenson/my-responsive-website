@@ -44,8 +44,56 @@ nav ul li a {
     margin-right: 30px;
     color: white;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 24px;
 }
+
+/* Css for line and circle on homepage */
+#center-line {
+    position: fixed;
+    left: 50%;
+    top: 0;
+    height: 100vh;
+    width: 18px;
+    background-color: #E5D3B5;
+    z-index: 10;
+}
+
+.circle {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 280px;
+    height: 280px;
+    background-color: #A5C4C4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.circle span {
+    text-align: center;
+}
+
+.circle h1 {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle h1 span {
+    font-size: 36px;font-weight: bolder;
+}
+
+.circle h1 .cookery-school {
+    font-size: 16px; 
+}
+
+/* end of code for line and circle on home page */
 
 /* Media query for responsive design */
 @media (max-width: 600px) {
