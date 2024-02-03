@@ -151,13 +151,13 @@ nav ul li a:hover::after {
 
 .grey-divider {
     height: 80px;
-    background-color: #3C3D43; /* Adjust color as needed */
+    background-color: #3C3D43;
     position: relative;
     width: 100%;
 }
 
 .blue-divider {
-    background-color: #A5C4C4; /* Adjust color as needed */
+    background-color: #A5C4C4; 
     height: 80px;
     width: 100%;
     position: relative;
@@ -195,6 +195,14 @@ nav ul li a:hover::after {
     margin-bottom: 10px;
 }
 
+.book-logo {
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+
+/* containers for sections */
+
 .bkg-container-one {
     height: fit-content;
     background-color: #E5D3B5;
@@ -230,8 +238,37 @@ nav ul li a:hover::after {
     flex: 1;
 }
 .image-section > img {
-   
     height: auto;
+}
+
+/* Target the school image*/
+.image-section:nth-child(1) img {
+    margin-bottom: 40px;
+}
+
+/* Target the kitchen image */
+.image-section:nth-child(2) img {
+    margin-bottom: 40px;
+}
+
+.text-section-courses {
+    padding-left: 40px;
+}
+
+/* padding between links */
+ul.courses-links li {
+    padding-bottom: 20px; 
+}
+ul.courses-links li a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+ul.courses-links li a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 /* Media query for responsive design */
@@ -269,12 +306,18 @@ nav ul li a:hover::after {
     }
 }
 
+/* media queries for screen sizes <854px */
 @media (max-width:854px) {
     .text-container {
         flex-direction: column-reverse;
     }
+
+    .text-section-courses {
+        padding-left: 0;
+    }
 }
 
+/* media queries for screen sizes <600px */
 @media (max-width: 600px) {
     .centered-michelin {
         width: 50px;
@@ -284,13 +327,13 @@ nav ul li a:hover::after {
 
     .grey-divider {
         height: 40px;
-        background-color: #3C3D43; /* Adjust color as needed */
+        background-color: #3C3D43;
         position: relative;
         width: 100%;
     }
 
     .blue-divider {
-        background-color: #A5C4C4; /* Adjust color as needed */
+        background-color: #A5C4C4; 
         height: 40px;
         width: 100%;
     }
@@ -320,6 +363,10 @@ nav ul li a:hover::after {
         padding-right: 0;
     }
 
+    .text-section-courses {
+        padding-left: 0;
+    }
+
     .circle-for-icon {
         position: absolute;
         top: 36%;
@@ -337,6 +384,12 @@ nav ul li a:hover::after {
         margin-bottom: 4px;
     }
 
+    .book-logo {
+        width: 30px;
+        height: 30px;
+        z-index: 100;
+    }
+
     .dashed-line {
         border-left: 2px dashed black;
         margin-left: 50px;
@@ -346,4 +399,22 @@ nav ul li a:hover::after {
         margin-left: 20px;
         margin-right:20px;
     }
-}
+
+        /* Target the school image*/
+    .image-section:nth-child(1) img {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    /* Target the kitchen image */
+    .image-section:nth-child(2) img {
+        margin-bottom: 0px;
+        margin-top:10px;
+        text-align: center;
+    }
+/* adjust positioning for h2 */
+    .bkg-container-one h2 {
+        margin-left:45px;
+        margin-top: 10px;
+    }
+    }
