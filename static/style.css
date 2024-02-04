@@ -385,19 +385,14 @@ footer {
     list-style-type: none;
 }
 
-#column1 {
-    text-align: center;    
-}
 
-#column2 ul, #column3 ul {
+#column1 ul, #column2 ul, #column3 ul {
     padding: 0;
     min-height: 200px;
 }
 
   #socials {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
   }
 
