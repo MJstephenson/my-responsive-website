@@ -388,7 +388,7 @@ footer {
 
 #column1 ul, #column2 ul, #column3 ul {
     padding: 0;
-    min-height: 200px;
+    min-height: 100px;
 }
 
   #socials {
