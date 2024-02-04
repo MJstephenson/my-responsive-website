@@ -564,8 +564,8 @@ footer {
     
       /* Adjustments for column2 and column3 to be side by side */
       #column2, #column3 {
-        flex-basis: calc(50% - 20px);
-        text-align: center; 
+        flex-basis: calc(50% - 20px); /* Adjust based on margin to fit side by side */
+        text-align: center; /* Optional: Adjust text alignment as needed */
       }
     
       footer {
