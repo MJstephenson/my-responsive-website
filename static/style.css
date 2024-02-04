@@ -349,9 +349,104 @@ ul.courses-links li a:hover {
     text-transform: uppercase;
     margin-left: 210px;
 }
+
 #date {
     text-transform: uppercase;
 }
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    margin-top: 40px;
+    margin-bottom:40px;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+  
+  .footer-column {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    text-align: left; /* Keep text alignment to the left */
+    flex: 1;
+    margin: 10px;
+    list-style-type: none;
+    width: 100%;
+    color: white;;
+}
+
+.footer-column ul {
+    list-style-type: none;
+}
+
+.footer-column p {
+    font-size: 32px;
+    margin-bottom: 0;
+    font-weight: bolder;
+}
+
+.content-wrapper {
+    display: inline-flex; 
+    flex-direction: column; /* Align items in a column */
+    align-items: flex-start; /* Align items to the start (left) of the wrapper */
+    list-style-type: none;
+}
+
+#column1 ul, #column2 ul, #column3 ul {
+    padding: 0;
+    min-height: 140px;
+}
+
+#column2 ul li, #column3 ul li {
+    padding-bottom: 10px;
+}
+
+#socials {
+    display: flex;
+    gap: 20px;
+    }
+
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    }
+
+.footer-column img:hover {
+    animation: wobble 0.5s ease-in-out;
+}
+
+  
+ #column3 .content-wrapper ul li a {
+      display: flex; 
+      justify-content: start; 
+      align-items: center; 
+  }
+  
+  #column3 .content-wrapper ul li a img {
+      margin-right: 8px; 
+  }
+
 
 /* Media query for responsive design */
 @media (max-width: 1250px) {
@@ -487,7 +582,7 @@ ul.courses-links li a:hover {
         margin-right:20px;
     }
 
-        /* Target the school image*/
+    /* Target the school image*/
     .image-section:nth-child(1) img {
         margin-bottom: 60px;
         text-align: center;
@@ -534,4 +629,29 @@ ul.courses-links li a:hover {
         color: white;
         font-size: 24px;
     }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-column p {
+        font-size: 18px;
+    }
+    
+      #column1 {
+        order: -1; /* Makes sure Column 1 is at the top */
+        flex-basis: 100%; /* Take full width to center content */
+        text-align: center;
+        max-height: 260px;
+      }
+     
+      footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
 }
