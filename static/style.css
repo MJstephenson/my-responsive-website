@@ -4,6 +4,10 @@ body {
     margin:0;
 }
 
+.sub-heading {
+    font-size: 32px;
+}
+
  /* Hamburger menu styles */
  .hamburger {
     display: none;
@@ -271,6 +275,47 @@ ul.courses-links li a:hover {
     font-weight: bolder;
 }
 
+/* instagram section */
+.instagram h2 {
+    margin-left: 210px;
+    color: white;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    flex: 1;
+    max-width: 40%;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.insta-info {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 210px;
+}
+#date {
+    text-transform: uppercase;
+}
+
 /* Media query for responsive design */
 @media (max-width: 1250px) {
     nav ul {
@@ -319,6 +364,11 @@ ul.courses-links li a:hover {
 
 /* media queries for screen sizes <600px */
 @media (max-width: 600px) {
+
+    .sub-heading {
+        font-size: 24px;
+    }
+
     .centered-michelin {
         width: 50px;
         top: 50%;
@@ -402,7 +452,7 @@ ul.courses-links li a:hover {
 
         /* Target the school image*/
     .image-section:nth-child(1) img {
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         text-align: center;
     }
 
@@ -412,9 +462,39 @@ ul.courses-links li a:hover {
         margin-top:10px;
         text-align: center;
     }
-/* adjust positioning for h2 */
+
+    /* adjust positioning for h2 */
     .bkg-container-one h2 {
         margin-left:45px;
         margin-top: 10px;
     }
+
+    .text-section {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-size: 16px;
     }
+
+    /* instagram section */
+
+    .image {
+        flex: 1;
+        max-width: 23%;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .insta-info {
+        color: white;
+        text-transform: uppercase;
+        margin-left: 50px;
+        font-size:12px;
+    }
+
+    .instagram h2 {
+        margin-left: 50px;
+        color: white;
+        font-size: 24px;
+    }
+}
