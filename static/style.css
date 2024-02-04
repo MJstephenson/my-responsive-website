@@ -361,8 +361,15 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: left;
-    list-style-type: none;
+    color: white;
+    margin-top: 40px;
+    margin-bottom:40px;
   }
+
+  footer a {
+    color: white;
+    text-decoration: none; 
+}
   
   .footer-column {
     display: flex;
@@ -372,10 +379,17 @@ footer {
     margin: 10px;
     list-style-type: none;
     width: 100%;
+    color: white;;
 }
 
 .footer-column ul {
     list-style-type: none;
+}
+
+.footer-column p {
+    font-size: 32px;
+    margin-bottom: 0;
+    font-weight: bolder;
 }
 
 .content-wrapper {
@@ -387,7 +401,7 @@ footer {
 
 #column1 ul, #column2 ul, #column3 ul {
     padding: 0;
-    min-height: 100px;
+    min-height: 140px;
 }
 
 #column2 ul li, #column3 ul li {
@@ -399,18 +413,11 @@ footer {
     gap: 20px;
   }
 
-  #column3 .content-wrapper ul li:nth-child(2),
-  #column3 .content-wrapper ul li:nth-child(3) {
-      display: flex; 
-      justify-content: start; 
-      align-items: center; 
-  }
   
  #column3 .content-wrapper ul li a {
       display: flex; 
       justify-content: start; 
       align-items: center; 
-      text-decoration: none; 
   }
   
   #column3 .content-wrapper ul li a img {
@@ -552,7 +559,7 @@ footer {
         margin-right:20px;
     }
 
-        /* Target the school image*/
+    /* Target the school image*/
     .image-section:nth-child(1) img {
         margin-bottom: 60px;
         text-align: center;
@@ -605,13 +612,18 @@ footer {
     footer {
         flex-direction: column;
         align-items: center;
-       
       }
+
+      .footer-column p {
+        font-size: 18px;
+     
+    }
     
       #column1 {
         order: -1; /* Makes sure Column 1 is at the top */
         flex-basis: 100%; /* Take full width to center content */
         text-align: center;
+        max-height: 260px;
        
       }
      
@@ -621,6 +633,4 @@ footer {
         justify-content: space-around;
         flex-wrap: wrap;
       }
-    
-    
 }
