@@ -391,6 +391,10 @@ footer {
     min-height: 100px;
 }
 
+#column2 ul li, #column3 ul li{
+    padding-bottom: 10px;
+}
+
   #socials {
     display: flex;
     gap: 20px;
