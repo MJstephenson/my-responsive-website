@@ -94,28 +94,65 @@ nav ul li a:hover::after {
     justify-content: center;
     align-items: center;
     z-index: 15;
+    perspective: 1000px;
 }
 
-.circle span {
+.circle-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden; /* Hide the back side when it is rotated */
+    transition: transform 0.6s linear;
+}
+
+.circle .front {
+    z-index: 2;
+}
+
+.circle .back {
+    transform: rotateY(180deg); /* Flip the back content by 180 degrees */
+    z-index: 1;
+}
+
+.circle:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.circle:hover .back {
+    transform: rotateY(0deg);
+}
+
+.circle span, .circle h1 {
     text-align: center;
 }
 
 .circle h1 {
     margin: 0;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .circle h1 span {
-    font-size: 52px;font-weight: bolder;
+    font-size: 52px;
+    font-weight: bolder;
 }
 
 .circle h1 .cookery-school {
     font-size: 18px;
-    padding-top: 20px; 
+    padding-top: 20px;
 }
+
+
+.circle .back span {
+    font-size: 20px;
+    color: black; 
+}
+
 
 .location-container {
     position: absolute;
