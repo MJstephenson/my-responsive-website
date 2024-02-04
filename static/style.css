@@ -349,9 +349,24 @@ ul.courses-links li a:hover {
     text-transform: uppercase;
     margin-left: 210px;
 }
+
 #date {
     text-transform: uppercase;
 }
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px; /* Adjust spacing as needed */
+  }
 
 /* Media query for responsive design */
 @media (max-width: 1250px) {
@@ -534,4 +549,31 @@ ul.courses-links li a:hover {
         color: white;
         font-size: 24px;
     }
+
+    /* footer */
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      #column1 {
+        order: -1; /* Makes sure Column 1 is at the top */
+        flex-basis: 100%; /* Take full width to center content */
+      }
+    
+      /* Adjustments for column2 and column3 to be side by side */
+      #column2, #column3 {
+        flex-basis: calc(50% - 20px);
+        text-align: center; 
+      }
+    
+      footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+    
+    
 }
