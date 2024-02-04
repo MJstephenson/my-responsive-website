@@ -412,10 +412,29 @@ footer a:hover {
     padding-bottom: 10px;
 }
 
-  #socials {
+#socials {
     display: flex;
     gap: 20px;
-  }
+    }
+
+@keyframes wobble {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+    }
+
+.footer-column img:hover {
+    animation: wobble 0.5s ease-in-out;
+}
 
   
  #column3 .content-wrapper ul li a {
