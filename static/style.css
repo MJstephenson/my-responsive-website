@@ -370,6 +370,10 @@ footer {
     color: white;
     text-decoration: none; 
 }
+
+footer a:hover {
+    text-decoration: underline;
+}
   
   .footer-column {
     display: flex;
@@ -616,7 +620,6 @@ footer {
 
       .footer-column p {
         font-size: 18px;
-     
     }
     
       #column1 {
@@ -624,7 +627,6 @@ footer {
         flex-basis: 100%; /* Take full width to center content */
         text-align: center;
         max-height: 260px;
-       
       }
      
       footer {
