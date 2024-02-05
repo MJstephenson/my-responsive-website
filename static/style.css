@@ -431,6 +431,16 @@ footer a:hover {
     }
     }
 
+footer img {
+    width: 24px;
+    height: 24px;
+    }
+
+#google-logo {
+    width: 200px;
+    height: auto;
+    }
+
 .footer-column img:hover {
     animation: wobble 0.5s ease-in-out;
 }
@@ -634,24 +644,43 @@ footer a:hover {
 
     footer {
         flex-direction: column;
-        align-items: center;
+        align-items: normal;
       }
 
-      .footer-column p {
-        font-size: 18px;
+    .footer-column p {
+    font-size: 18px;
     }
     
-      #column1 {
-        order: -1; /* Makes sure Column 1 is at the top */
-        flex-basis: 100%; /* Take full width to center content */
-        text-align: center;
-        max-height: 260px;
-      }
-     
-      footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      }
+    #column1 {
+    order: -1; /* Makes sure Column 1 is at the top */
+    flex-basis: 100%; /* Take full width to center content */
+    text-align: center;
+    max-height: 260px;
+    }
+
+    #column1 > .content-wrapper > p {
+    margin: auto;
+    }
+    
+    footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+
+    footer img {
+    width: 16px;
+    height: 16px;
+    }
+
+    #google-logo {
+    width: 200px;
+    height: 200px;
+    }
+
+    #socials {
+    gap: 20px;
+    margin: auto;
+    }
 }
