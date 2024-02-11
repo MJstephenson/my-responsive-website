@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #3c3d43;
     font-family: 'Roboto', sans-serif;
     margin:0;
+    font-size: 18px;
 }
 
 .sub-heading {
@@ -583,6 +588,10 @@ footer img {
 /* media queries for screen sizes <600px */
 @media (max-width: 600px) {
 
+    body {
+        font-size: 16px;
+    }
+    
     .sub-heading {
         font-size: 24px;
     }
